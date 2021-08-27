@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  padding: 50px 0px;
+  border-bottom: 1px solid #eee;
+}
+header h1 {
+  text-align: center;
+  font-family: Verdana;
+  font-size: 20pt;
+  font-weight: lighter;
+}
+nav {
+  padding: 20px 0px;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  width: 100px;
+  padding: 10px 0px;
+  text-align: center;
+}
+nav ul li a {
+  font-family: arial;
+  text-decoration: none;
+  color: black;
+}
+main {
+  margin: 0px 100px;
+  padding: 10px;
+}
+main #container {
+  font-family: arial;
+  line-height: 30pt;
+  text-align: justify;
+}
+main #container img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+}
+/* ------------ Formulário de cadastro de produtos------------- */
+main #container #cadastro {
+  width: 50%;
+  padding: 30px;
+  background-color: darkgoldenrod;
+  margin: 0 auto;
+}
+main #container #cadastro input,
+main #container #cadastro textarea,
+main #container #cadastro button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+}
+
+/* ---------------- lista de produtos ------------------------------- */
+
+main #container #listarProdutos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 10px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+main #container #listarProdutos #produto {
+  width: 30%;
+  height: auto;
+  text-align: center;
+  border: 1px solid green;
+  margin: 10px;
+}
+main #container #linha {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 10px;
+  border-bottom: 1px solid #ccc;
+}
+main #container #linha #foto {
+  flex: 0.2;
+}
+main #container #linha #nome,
+main #container #linha #preco,
+main #container #linha #atualizar,
+main #container #linha #apagar {
+  flex: 1;
+  font-family: arial;
+  padding-top: 10px;
+  text-align: center;
+}
+main #container #linha #foto img {
+  width: 100%;
+  height: auto;
+}
+#fundo {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  background-image: url("../images/fundo.gif");
+  background-position: center center;
+  font-family: arial;
+  font-size: 20pt;
+  text-align: center;
+}
